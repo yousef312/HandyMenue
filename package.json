@@ -1,0 +1,35 @@
+{
+  "name": "handymenuejs",
+  "version": "1.0.0",
+  "description": "a library that create and manage contextmenu with ease",
+  "main": "handymenue.js",
+  "scripts": {
+    "test": "handy ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousef312/HandyMenueJs.git"
+  },
+  "keywords": [
+    "context",
+    "menu",
+    "menu",
+    "main",
+    "menu",
+    "click",
+    "right",
+    "click",
+    "library",
+    "manage",
+    "button",
+    "items",
+    "dblclick",
+    "actions"
+  ],
+  "author": "Yousef Neji <youNej3030@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yousef312/HandyMenueJs/issues"
+  },
+  "homepage": "https://github.com/yousef312/HandyMenueJs#readme"
+}
