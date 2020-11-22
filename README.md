@@ -1,11 +1,22 @@
 # HandyMenueJs
 a library which handle creating, interact and managing context menu with ease
+
+## What does we offer?
+* easy step to create, deploy and manipulate your contextmenu
+* a lot of possiblity to design and manage your contextmenu the way you want
+* no dependency at all
+* an event system for more control
+* official buttons types
+and soon(still working on)
+* the menu direction: you can choose the direction of the menu for both english, arabic contextmenu.
+* quick function: 
 ## Installation
 **sorry the library not published on npm yet! you can only download it from github**.
 
 still you can use it in your nodejs project and require it with.
 ## Dependencies 
 no dependency required
+
 ## Usage
 ```javascript
 //this step is mean for nodeJS usuage, about ordinary browser usuage you can just skip this step and use HandyMenue global class.
@@ -112,7 +123,7 @@ will be displayed and so on.
     icon : 'img/radioIcon.png'// a path to an image to use as the radio icon
  }
 ```
-the radio box is like the html usual radio boxes, the name is required so it can work with other radio buttons list and subtract data
+the radio box is like the html usual radio boxes, the name is required so it can work with other radio buttons list and subtract data.
 
 <span style="color:blue">data-set</span>:
 ```javascript
@@ -207,5 +218,12 @@ a slider is button when you wheel(circle your mouse wheel)  over it it will slid
 ```
 art show button display a **resizable** image at the top right corner of your page, you can define this image throught the src attribute
 * src : the source of the image to display
+
+* accelerator : an accelerator is a shortcut you can set for your ordinary buttons only, passing a string of keys name concatination.
+to complete setting up your accelerator you must have the library Quiway.Js, instantiate the quiway class and pass the Quiway object into HandyMenue.quiwayIntegration(quiwayObject) and done.
+**functions**:
+
+* HandyMenue.getMenuData() : this function allows you to get some of your menu data like width height location properties... it returns an object.
+* HandyMenue.quiwayIntegration(quiwayObject) : this function used to complete setting up your accelerator key using the Quiway.Js library passed as an object.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
