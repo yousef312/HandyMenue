@@ -6,7 +6,7 @@ instal this library using the [npm](https://www.npmjs.com) package manager tool
 npm install handymenuejs
 ```
 ## Dependencies 
-jquery ^3.5.1
+jquery ^3.5.1 -working on removeing this dependency
 ## Usage
 ```javascript
 const handymenue = require('handymenuejs');
