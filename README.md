@@ -226,5 +226,7 @@ to complete setting up your accelerator you must have the library Quiway.Js, ins
 
 * HandyMenue.getMenuData() : this function allows you to get some of your menu data like width height location properties... it returns an object.
 * HandyMenue.quiwayIntegration(quiwayObject) : this function used to complete setting up your accelerator key using the Quiway.Js library passed as an object.
+* HandyMenue.retrieveData(step) : this function allows you to retrieve a data of a check-box, radio-button, slider or a data-set button, the step is the name attribute you 
+passed to the button of those types. Otherwise, if no name was passed the radio button will throw an error but the other buttons will take their label as the name.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
