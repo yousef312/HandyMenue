@@ -1,12 +1,14 @@
 # HandyMenueJs
 a library which handle creating, interact and managing context menu with ease
 ## Installation
-**sorry the library not published on npm yet!**.
-the only way to download it is using github.
+**sorry the library not published on npm yet! you can only download it from github**.
+
+still you can use it in your nodejs project and require it with.
 ## Dependencies 
 no dependency required
 ## Usage
 ```javascript
+//this step is mean for nodeJS usuage, about ordinary browser usuage you can just skip this step and use HandyMenue global class.
 const handymenue = require('handymenuejs');
 
 /* 
