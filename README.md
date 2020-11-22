@@ -10,7 +10,7 @@ a library which handle creating, interact and managing context menu with ease
 
 and soon(still working on)
 * the menu direction: you can choose the direction of the menu for both english, arabic contextmenu.
-* quick function: 
+* more default themes and more..
 ## Installation
 **sorry the library not published on npm yet! you can only download it from github**.
 
