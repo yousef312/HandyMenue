@@ -6,7 +6,8 @@ a library which handle creating, interact and managing context menu with ease
 * a lot of possiblity to design and manage your contextmenu the way you want
 * no dependency at all
 * an event system for more control
-* official buttons types
+* official buttons types.
+
 and soon(still working on)
 * the menu direction: you can choose the direction of the menu for both english, arabic contextmenu.
 * quick function: 
