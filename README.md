@@ -1,7 +1,8 @@
 # HandyMenueJs
 a library which handle creating, interact and managing context menu with ease
 ## Installation
-<span style="background-color:red"> sorry the library not published on npm yet!</span>
+**sorry the library not published on npm yet!**.
+the only way to download it is using github.
 ## Dependencies 
 no dependency required
 ## Usage
