@@ -618,8 +618,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                     this.details = data[1];
                     this.event =data[2];
                     this.closer = data[3];
-                    this.functionDelay = data[4];
-                    this.type = data[5]
+                    this.type = data[4]
                 }
             };
             class ContextMenuOpen {
@@ -630,8 +629,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                     this.buttons = data[3];
                     this.disable = data[4];
                     this.type = data[5];
-                    this.functionDelay = data[6];
-                    this.event = data[7]
+                    this.event = data[6]
                 }
             };
             class ContextMenuEdge {
@@ -1110,7 +1108,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                 }
                 $('.HandyMenueItems').on('contextmenu',e=>e.preventDefault());
                 self.appendFunctions();
-                EventCheck('open',[self,e.target,details,buttons,self.disable,'launch',0,e]);
+                EventCheck('open',[self,e.target,details,buttons,self.disable,'launch',e]);
             };
             this.version = '0.0.1';
             this.event = null;
