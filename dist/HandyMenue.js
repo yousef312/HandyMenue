@@ -234,7 +234,8 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                 }
             },{
                 label : 'See image:"Joseph.png"',
-                type : 'art-show'
+                type : 'art-show',
+		src : 'none'
             },{
                 label : 'Small icons',
                 type : 'radio-button',
