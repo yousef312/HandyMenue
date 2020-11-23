@@ -360,6 +360,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                     }
                 }
                 var $  = new C();
+		var HMDataTable = [];
             idCount++;
             //appending a style Tag at the top of the HTML page for later use
             if(document.getElementsByTagName('style').length==0){
@@ -1007,7 +1008,6 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
             var lastSpot = null;
             details = {};
             //a function to register data into the table //basical
-            var HMDataTable = [];
             function registerData(step,data){
                 i=-1;
                 var found = false;
