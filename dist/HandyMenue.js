@@ -235,7 +235,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
             },{
                 label : 'See image:"Joseph.png"',
                 type : 'art-show',
-		src : 'none'
+                src : 'none'
             },{
                 label : 'Small icons',
                 type : 'radio-button',
@@ -360,7 +360,6 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                     }
                 }
                 var $  = new C();
-		var HMDataTable = [];
             idCount++;
             //appending a style Tag at the top of the HTML page for later use
             if(document.getElementsByTagName('style').length==0){
@@ -611,6 +610,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
             var menu = this.menu;
             menu.on('contextmenu',(e)=>{e.preventDefault();});
             var quiwayS = [];
+            var HMDataTable = [];
             //classes 
             class ContextMenuClose{
                 constructor(data){
@@ -1039,7 +1039,6 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                 try{
                     stylelist['boxSising'] = 'border-box';
                     button=buttons[buttonIndex];
-                    console.log(button);console.log(buttonsSetUp)
                     buttonsSetUp[button['addresse'][0]][button['addresse'][1]]['disabled']=true;
                     self.disabled.push([buttonIndex,button[0].attr('style')]);
                     button[0].attr('style',mgf(stylelist));
@@ -1268,7 +1267,6 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                         function checkit(e){
                             if(item[2].val()=='false'){
                                 item[2].val(true);
-                                console.log(item[2].val())
                                 item[2].parent().css('backgroundImage',item[3][0]);
                                 if(item[3][1]!=undefined)
                                     if(item[3][1].length>1)
