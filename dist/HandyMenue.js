@@ -185,8 +185,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                 func_off : function(){
                     if($('#coords-show'))
                         $('#coords-show').remove();
-                },
-                icon : 'img/checkIcon.png'
+                }
             },{
                 label : 'Save my name',
                 type : 'data-set',
@@ -235,8 +234,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                 }
             },{
                 label : 'See image:"Joseph.png"',
-                type : 'art-show',
-                src : 'img/alpine.jpg'
+                type : 'art-show'
             },{
                 label : 'Small icons',
                 type : 'radio-button',
@@ -810,7 +808,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                                     if(itom[0]==item.name){
                                         found = true;
                                         buttonsSetUp[1][i][1].push([box,item.func,state]);
-                                        if(item.default) front.append(itom[2]);
+                                        if(item.default&&item.default==true)front.append(itom[2]);
                                         if(itom[2].css('backgroundImage')=='none' && item.icon ) itom[2].css('backgroundImage',`url(${item.icon})`);
                                     }
                                 });
@@ -823,6 +821,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                                     buttonsSetUp[1].push([item.name,[[box,item.func,state]],ball,buttonsIndex]);
                                     addressez[1]++;
                                     buttonDetails['addresse'] = [1,addressez[1]];
+                                    registerData(item.name,state);
                                 }else buttonDetails['addresse'] = [1,addressez[1]];
                             }else throw new Error("HandyMenue.js error \nradio boxes must have a name so you can reclaim it's data later");
                             break;
@@ -840,6 +839,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                             front.css('backgroundImage','none')
                             .css('backgroundRepeat','no-repeat').css('backgroundSize','contain')
                             .css('backgroundPosition','center');
+                            if(item.checked&&item.checked==true)front.css('backgroundImage',src);
                             state = $('%var').val(false).css('display','none');
                             front.append(state);
                             buttonsSetUp[2].push([item.name?item.name:item.label,box,state,[src,labels],item.func,item.func_off,buttonsIndex]);
@@ -1132,7 +1132,7 @@ console.warn(`HandyMenue.js notice dear client:\nwelcome to our little amazing l
                     if(!itm['disabled'])
                     itm[1].forEach(item=>{
                         item[0].on('click',function(e){
-                            item[0][0].childNodes[0].append(itm[2][0][0]);
+                            item[0][0].childNodes[0].append(itm[2][0]);
                             details = {
                                 more : details,
                                 buttonType : 'radio-button',
